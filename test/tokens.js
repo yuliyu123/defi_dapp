@@ -1,0 +1,15 @@
+usdt = "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+shib = "0x95aD61b0a150d79219dCF64E1E6Cc01f0B64C4cE"
+eth_usd_price_feed = "0x5f4eC3Df9cbd43714FE2740f5E3616155c5b8419"
+dai_usd_price_feed = "0x2bA49Aaa16E6afD2a993473cfB70Fa8559B523cF"
+
+
+// rinkeby:
+//     link_token: "0x01BE23585060835E02B77ef475b0Cc51aA1e0709"
+//     eth_usd_price_feed: "0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
+//     dai_usd_price_feed: "0x2bA49Aaa16E6afD2a993473cfB70Fa8559B523cF"
+// kovan:
+//     weth_token: "0xd0a1e359811322d97991e03f863a0c30c2cf029c"
+//     fau_token: "0xFab46E002BbF0b4509813474841E0716E6730136"
+//     eth_usd_price_feed: "0x9326BFA02ADD2366b30bacB125260Af641031331"
+//     dai_usd_price_feed: "0x777A68032a88E5A84678A77Af2CD65A7b3c0775a"
