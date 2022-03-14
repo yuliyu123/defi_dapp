@@ -10,9 +10,7 @@ Just implement smart contract part by Solidity now.
 
 
 # 3rd libraries
-    npm install dotenv
-    yarn add @openzeppelin/contracts 
-    yarn add chainlink/contracts
+    npm install
 
 # Deploy
     npx hardhat run scripts/tokenFarm_script.js --network rinkeby
