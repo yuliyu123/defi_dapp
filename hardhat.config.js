@@ -55,6 +55,11 @@ const INFURA_PROJECT_ID = process.env.WEB3_INFURA_PROJECT_ID
       url: `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`,
       accounts: [`${PRIVATE_KEY}`],
     },
+    fantom_fork: {
+      url: "https://speedy-nodes-nyc.moralis.io/202cdb2908b026ae9a1991ce/fantom/mainnet",
+      blockNumber:32971742,
+    },
+    loggingEnabled: false
   },
   solidity: "0.8.4",
 };
