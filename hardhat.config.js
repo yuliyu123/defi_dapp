@@ -1,5 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
-require("dotenv").config;
+require("dotenv").config({path: ".env"});
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
@@ -27,11 +27,18 @@ const INFURA_PROJECT_ID = process.env.WEB3_INFURA_PROJECT_ID
     hardhat: {
       forking: {
         // Replace with your actual API URL
-        url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_PROJECT_ID}`
+        url: `https://eth-mainnet.alchemyapi.io/v2/${ALCHEMY_PROJECT_ID}`,
+        loggingEnabled: false,
       }
+      // forking: {
+      //   url: process.env.POLYGON_NODE_URL,
+      //   accounts: [process.env.POLYGON_PRIVATE_KEY],
+      //   enabled: true
+      // },  
     },
     local: {
       url: 'http://127.0.0.1:8545', //本地RPC地址
+      loggingEnabled: false,
     },
     ropsten: {
       url: `https://ropsten.infura.io/v3/${INFURA_PROJECT_ID}`,  //Infura url with projectId
@@ -59,7 +66,6 @@ const INFURA_PROJECT_ID = process.env.WEB3_INFURA_PROJECT_ID
       url: "https://speedy-nodes-nyc.moralis.io/202cdb2908b026ae9a1991ce/fantom/mainnet",
       blockNumber:32971742,
     },
-    loggingEnabled: false
   },
   solidity: "0.8.4",
 };
